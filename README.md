@@ -1,47 +1,22 @@
-🛒 E-Commerce Data Analysis
-This project analyzes e-commerce sales data, identifying the most sold products and visualizing sales statistics.
+# Product Sales Analysis Tool
 
-📌 Features
-✅ Load data from CSV files
-✅ Identify the most sold products
-✅ Generate visual sales reports
+This is a simple Python tool that allows you to view and analyze the most sold products and view sales statistics in the form of a chart.
 
-📂 Project Structure
-bash
-Копировать
-Редактировать
-ecommerce_analysis/
-│── data/
-│   ├── products.csv          # List of products
-│   ├── transactions.csv      # Sales transactions
-│── src/
-│   ├── data_loader.py        # Loads data from CSV
-│   ├── analyzer.py           # Analyzes sales data
-│   ├── visualizer.py         # Generates graphs
-│── main.py                   # Runs the program
-│── README.md                 # Project description
-│── requirements.txt          # Required dependencies
-⚙ Installation & Usage
-1️⃣ Ensure Python 3 is installed.
-2️⃣ Install dependencies:
+## Features
 
-sh
-Копировать
-Редактировать
-pip install -r requirements.txt
-3️⃣ Run the project:
+1. **Most Sold Products**: Displays the most sold products along with their respective sales count.
+2. **Sales Statistics**: Displays sales statistics in the form of a chart and saves it to a file.
+3. **Exit**: Allows the user to exit the program.
 
-sh
-Копировать
-Редактировать
-python main.py
-📊 Output
-The list of top-selling products will be displayed in the terminal. A bar chart is saved as top_products.png and shown automatically.
+## Requirements
 
-Example Chart:
+To run this project, you will need to install the following Python packages:
 
+- `matplotlib`: For visualizing sales statistics.
+- `analyzer`: A custom module used for fetching the most sold products.
+- `visualizer`: A custom module used for displaying the sales statistics chart.
 
-🔧 Troubleshooting
-If the chart shows "Unknown" as a product name, check the products.csv file.
+You can install the required packages using:
 
-Ensure transactions.csv contains valid product IDs.
+```bash
+pip install matplotlib
