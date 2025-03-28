@@ -1,20 +1,18 @@
-import matplotlib
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-
 from analyzer import most_sold_products
-from data_loader import load_csv
-
-products = load_csv("data/products.csv")
-product_dict = {p["id"]: p["name"] for p in products}
 
 top_products = most_sold_products()
 
-labels = [product_dict[prod_id] for prod_id, _ in top_products]
-values = [count for _, count in top_products]
+if not top_products:
+    print("Eng ko‘p sotilgan mahsulotlar haqida ma’lumot yo‘q.")
+else:
+    labels, values = zip(*top_products.items())
 
-plt.bar(labels, values, color='skyblue')
-plt.xlabel("Mahsulotlar")
-plt.ylabel("Sotilgan soni")
-plt.title("Eng ko‘p sotilgan mahsulotlar")
-plt.xticks(rotation=45)
+    def show_top_products():
+        plt.figure(figsize=(10, 5))
+        plt.bar(labels, values, color='skyblue')
+        plt.xlabel("Mahsulotlar")
+        plt.ylabel("Sotilgan soni")
+        plt.title("Eng ko‘p sotilgan mahsulotlar")
+        plt.xticks(rotation=45, ha="right")
+        plt.savefig("top_products.png", dpi=300, bbox_inches="tight")
