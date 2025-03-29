@@ -1,9 +1,14 @@
-# Product Sales Analysis Tool
+# 📊 E-commerce Analysis
 
-This is a simple Python tool that allows you to view and analyze the most sold products and view sales statistics in the form of a chart.
+Bu loyiha elektron tijorat (e-commerce) savdolarini tahlil qilish uchun mo‘ljallangan oddiy Python vositasidir. U foydalanuvchilarga eng ko‘p sotilgan mahsulotlarni ko‘rish va savdo statistikasini grafik shaklida vizualizatsiya qilish imkonini beradi.
 
-## Features
+## 🚀 Xususiyatlar
+- **Eng Ko‘p Sotilgan Mahsulotlar**: Eng ko‘p sotilgan mahsulotlarni va ularning sotilish sonini ko‘rsatadi.
+- **Savdo Statistikasi**: Mahsulotlarning sotuv bo‘yicha taqsimotini grafik shaklida ko‘rsatadi.
+- **Chiqish**: Dasturdan chiqish imkoniyati mavjud.
 
-1. **Most Sold Products**: Displays the most sold products along with their respective sales count.
-2. **Sales Statistics**: Displays sales statistics in the form of a chart and saves it to a file.
-3. **Exit**: Allows the user to exit the program.
+## 🛠 O‘rnatish
+Python va kerakli kutubxonalarni o‘rnatish uchun quyidagi buyruqlarni bajaring:
+
+```bash
+pip install pandas matplotlib
