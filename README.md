@@ -11,7 +11,7 @@ Bu loyiha elektron tijorat (e-commerce) savdolarini tahlil qilish uchun mo‘lja
 Python va kerakli kutubxonalarni o‘rnatish uchun quyidagi buyruqlarni bajaring:
 
 ```bash
-pip install pandas matplotlib
+pip install matplotlib
 ```
 
 ## ▶️ Ishga tushirish
@@ -37,6 +37,3 @@ ecommerce_analysis/
 
 ## 🖼 Natija
 Savdo statistikasini grafik shaklda sales_chart.png fayliga saqlaydi.
-
-##
-
