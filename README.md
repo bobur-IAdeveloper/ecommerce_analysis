@@ -8,20 +8,27 @@ Bu loyiha elektron tijorat (e-commerce) savdolarini tahlil qilish uchun mo‘lja
 - **Chiqish**: Dasturdan chiqish imkoniyati mavjud.
 
 ## Dataset
-
-Loyihada ishlatilgan ma'lumotlar Kaggle platformasidan olingan:
-Online Retail Dataset
-
+Loyihada ishlatilgan ma'lumotlar **Kaggle** platformasidan olingan:
+[Online Retail Dataset](https://www.kaggle.com/datasets/carrie1/ecommerce-data)<br>
 Bu dataset onlayn do‘kon tranzaktsiyalarini o‘z ichiga oladi, jumladan mahsulot kodlari, tavsiflari, miqdorlari va sotuv sanalari.
 
-
-
 ## O‘rnatish
-Python va kerakli kutubxonalarni o‘rnatish uchun quyidagi buyruqlarni bajaring:
 
-```bash
+**1.** Repodan nusxa oling:
+```
+git clone https://github.com/yourusername/ecommerce_analysis.git
+```
+**2.** Loyiha katalogiga o‘ting:
+```
+cd ecommerce_analysis/src
+```
+**3.** Kerakli kutubxonalarni o‘rnating:
+```
 pip install matplotlib
 ```
+**4.** ```ecommerce_data.csv``` fayli ```data``` papkasida joylashganligiga ishonch hosil qiling.
+
+
 
 ## Ishga tushirish
 Dasturni ishga tushirish uchun:
@@ -44,5 +51,5 @@ ecommerce_analysis/
 │── README.md                 # Loyihaning tavsifi
 ```
 
-## 🖼 Natija
+## Natija
 Savdo statistikasini grafik shaklda ```sales_chart.png``` fayliga saqlaydi.
