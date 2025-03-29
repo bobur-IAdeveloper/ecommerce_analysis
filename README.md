@@ -36,4 +36,4 @@ ecommerce_analysis/
 ```
 
 ## 🖼 Natija
-Savdo statistikasini grafik shaklda sales_chart.png fayliga saqlaydi.
+Savdo statistikasini grafik shaklda ```sales_chart.png``` fayliga saqlaydi.
