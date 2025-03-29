@@ -12,3 +12,31 @@ Python va kerakli kutubxonalarni o‘rnatish uchun quyidagi buyruqlarni bajaring
 
 ```bash
 pip install pandas matplotlib
+```
+
+## ▶️ Ishga tushirish
+Dasturni ishga tushirish uchun:
+
+```bash
+python main.py
+```
+
+## 📂 Loyiha Tuzilishi
+```bash
+ecommerce_analysis/
+│── data/
+│   ├── products.csv          # Mahsulotlar ro‘yxati
+│   ├── transactions.csv      # Xaridlar tarixi
+│── src/
+│   ├── analyzer.py           # Sotuvlarni tahlil qilish
+│   ├── data_loader.py        # Ma'lumotlarni yuklovchi modul
+│   ├── main.py               # Dasturni ishga tushirish
+│   |── visualizer.py         # Grafik chizish
+│── README.md                 # Loyihaning tavsifi
+```
+
+## 🖼 Natija
+Savdo statistikasini grafik shaklda sales_chart.png fayliga saqlaydi.
+
+##
+
