@@ -1,20 +1,22 @@
 from collections import Counter
 from data_loader import load_csv
 
-transactions = load_csv("data/transactions.csv")
-products = load_csv("data/products.csv")
-
-product_dict = {p["id"]: p["name"] for p in products}
+products = load_csv("data/data.csv")
+products_dict = {p["StockCode"]: p["Description"] for p in products}
 
 def most_sold_products():
     product_count = Counter()
-    top_5_products = {}
+    product = {}
 
-    for transaction in transactions:
-        product_count[transaction["product_id"]] += int(transaction["quantity"])
+    for i in products:
+        product_id = i["StockCode"]
+        quantity = int(i["Quantity"])
+        product_count[product_id] += quantity
 
-    top_products = product_count.most_common(5)
-    for id, count in top_products:
-        product_name = product_dict.get(id, "Noma'lum")
-        top_5_products[product_name] = count
-    return top_5_products
+    top_5_products = product_count.most_common(5)
+    for stockcode, count in top_5_products:
+        product_name = products_dict.get(stockcode, "Noma'lum")
+        product[product_name] = count
+    return product
+
+

@@ -1,29 +1,29 @@
 from analyzer import most_sold_products
-from visualizer import show_top_products  # Import function, not plt
+from visualizer import show_top_products
 
 def main():
     while True:
-        print("\n1 - Most sold products")
-        print("2 - View sales statistics")
-        print("3 - Exit")
+        print("\n1 - Eng ko'p sotilgan mahsulotlar")
+        print("2 - Grafikni Ko'rish")
+        print("3 - Chiqish")
 
         choice = input(">>> ")
-
         if choice == '1':
-            top_products = most_sold_products()
-            if not top_products:
-                print("No data available!")
-            else:    
-                print("\nMost sold products:")
-                for name, count in top_products.items():
-                    print(f"  {name}: {count} sold")
+            p = most_sold_products()
+            if not p:
+                print("Ma'lumotlar yuq")
+            else:
+                print("Eng ko'p sotilgan mahsulotlar: ")
+                for pr, cn in p.items():
+                    print(f"{pr} {cn}ta sotilgan")
         elif choice == '2':
             show_top_products()
-            print("Chart saved!")
+            print("Diagramma fayllarga saqlandi!")
         elif choice == '3':
+            print("Dastur Tugadi...")
             break
         else:
-            print("Invalid choice! Please try again!")
+            print("Notug'ri tanlov! qayta urinib ko'ring")
 
 if __name__ == "__main__":
     main()
