@@ -16,7 +16,7 @@ Bu dataset onlayn do‘kon tranzaktsiyalarini o‘z ichiga oladi, jumladan mahsu
 
 **1.** Repodan nusxa oling:
 ```
-git clone https://github.com/yourusername/ecommerce_analysis.git
+git clone https://github.com/bobur-IAdeveloper/ecommerce_analysis.git
 ```
 **2.** Loyiha katalogiga o‘ting:
 ```
