@@ -7,7 +7,7 @@ Bu loyiha elektron tijorat (e-commerce) savdolarini tahlil qilish uchun mo‘lja
 - **Savdo Statistikasi**: Mahsulotlarning sotuv bo‘yicha taqsimotini grafik shaklida ko‘rsatadi.
 - **Chiqish**: Dasturdan chiqish imkoniyati mavjud.
 
-## Datase
+## Dataset
 Loyihada ishlatilgan ma'lumotlar **Kaggle** platformasidan olingan:
 [Online Retail Dataset](https://www.kaggle.com/datasets/carrie1/ecommerce-data)<br>
 Bu dataset onlayn do‘kon tranzaktsiyalarini o‘z ichiga oladi, jumladan mahsulot kodlari, tavsiflari, miqdorlari va sotuv sanalari.
