@@ -13,6 +13,6 @@ else:
         plt.bar(labels, values, color='skyblue')
         plt.xlabel("Mahsulotlar", color="Red")
         plt.ylabel("Sotilgan soni")
-        plt.title("Eng ko‘p sotilgan mahsulotlar")
+        plt.title("Eng ko'p sotilgan mahsulotlar")
         plt.xticks(rotation=45, ha="right")
         plt.savefig("top_products.png", dpi=300, bbox_inches="tight")
